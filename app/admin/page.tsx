@@ -9,7 +9,7 @@ export default function AdminDashboardPage() {
           Admin Dashboard
         </h1>
         <p className="text-xl md:text-base sm:text-sm text-slate-500 font-medium sm:px-2">
-          Comprehensive business management for Pandora Beauty Salon
+          Comprehensive business management for ABC Beauty Salon
         </p>
       </div>
 

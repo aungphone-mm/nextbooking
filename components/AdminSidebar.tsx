@@ -184,7 +184,7 @@ export default function AdminSidebar() {
         <div className="bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-6 mb-8 border border-white/10 backdrop-blur-sm text-center">
           <div className="text-3xl mb-2">💅</div>
           <h2 className="text-2xl font-extrabold m-0 bg-gradient-to-r from-pink-500 to-pink-300 bg-clip-text text-transparent">
-            Pandora Beauty
+            ABC Beauty
           </h2>
           <div className="text-sm text-slate-400 font-medium mt-1">
             Admin Control Panel

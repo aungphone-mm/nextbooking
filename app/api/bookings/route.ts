@@ -5,7 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 export async function POST(request: NextRequest) {
   try {
     const data = await request.json()
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // 1. Calculate total price first (services + products)
     // Support both old format (serviceId) and new format (serviceIds array)

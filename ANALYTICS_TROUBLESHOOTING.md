@@ -1,4 +1,4 @@
-# Analytics Troubleshooting Guide for Pandora Beauty Salon
+# Analytics Troubleshooting Guide for ABC Beauty Salon
 
 ## Quick Fixes to Try:
 

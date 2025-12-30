@@ -17,7 +17,7 @@ export default function HomePage() {
             Premium Beauty Experience
           </div>
           <h1 className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">
-            Pandora Beauty Salon
+            ABC Beauty Salon
           </h1>
           <p className="text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
             Where beauty meets artistry. Experience world-class treatments
@@ -95,7 +95,7 @@ export default function HomePage() {
         {/* Why Choose Us Section */}
         <div className="bg-white/80 backdrop-blur-md rounded-[30px] p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.1)] border border-white/50">
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-            Why Choose Pandora?
+            Why Choose ABC?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
             <div>

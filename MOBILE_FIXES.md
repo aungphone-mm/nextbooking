@@ -1,8 +1,8 @@
-# Mobile Responsiveness Fixes for Pandora Beauty Salon
+# Mobile Responsiveness Fixes for ABC Beauty Salon
 
 ## Summary of Changes
 
-I've fixed the mobile responsiveness issues in your Pandora Beauty Salon booking system. Here are the key changes made:
+I've fixed the mobile responsiveness issues in your ABC Beauty Salon booking system. Here are the key changes made:
 
 ### 1. AdminSidebar Component (`/components/AdminSidebar.tsx`)
 - **Fixed the mobile menu button**: Removed inline `@media` queries (which don't work in React inline styles) and moved them to a proper style tag in useEffect

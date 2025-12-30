@@ -2,7 +2,7 @@
 
 ## 🎯 What's New
 
-Your Pandora Beauty Salon now has a **complete Hybrid Payroll System** with:
+Your ABC Beauty Salon now has a **complete Hybrid Payroll System** with:
 - ✅ Flexible compensation profiles (4 options)
 - ✅ Performance-based tiers (Bronze → Platinum)
 - ✅ Custom bonuses & team bonuses

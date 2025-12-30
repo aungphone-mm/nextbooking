@@ -1,6 +1,6 @@
 # StatusCard Component Usage Guide
 
-The StatusCard component provides a consistent way to display statistical information across the Pandora Beauty Salon admin panel.
+The StatusCard component provides a consistent way to display statistical information across the ABC Beauty Salon admin panel.
 
 ## Basic Usage
 

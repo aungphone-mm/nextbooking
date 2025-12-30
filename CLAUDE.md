@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Pandora Beauty Salon Booking System - A Next.js 14 application for managing beauty salon appointments with admin dashboard, analytics, and customer booking features. Built with TypeScript, Supabase (PostgreSQL + Auth), and Tailwind CSS.
+ABC Beauty Salon Booking System - A Next.js 14 application for managing beauty salon appointments with admin dashboard, analytics, and customer booking features. Built with TypeScript, Supabase (PostgreSQL + Auth), and Tailwind CSS.
 
 ## Technology Stack
 

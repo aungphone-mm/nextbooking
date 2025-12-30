@@ -260,7 +260,7 @@ export default function EnhancedReportsPage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Advanced Business Intelligence</h1>
-              <p className="text-gray-500 text-base">Comprehensive insights for Pandora Beauty Salon</p>
+              <p className="text-gray-500 text-base">Comprehensive insights for ABC Beauty Salon</p>
             </div>
 
             {/* Export Summary Button */}

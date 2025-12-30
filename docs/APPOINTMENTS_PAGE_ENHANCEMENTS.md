@@ -230,7 +230,7 @@ The enhanced appointment management page now provides:
 ✅ **User-Friendly**: Intuitive interface for staff use
 ✅ **Performance**: Fast loading and responsive interactions
 
-The appointment management system now matches the high-quality experience provided by Pandora Beauty Salon, making it easy for staff to manage appointments efficiently while providing excellent customer service.
+The appointment management system now matches the high-quality experience provided by ABC Beauty Salon, making it easy for staff to manage appointments efficiently while providing excellent customer service.
 
 ---
 

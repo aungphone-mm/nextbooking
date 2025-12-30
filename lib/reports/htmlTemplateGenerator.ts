@@ -348,7 +348,7 @@ export class HTMLTemplateGenerator {
     return `
 <div class="cover-page page-break">
   <h1>📊 Staff Performance & Payroll Report</h1>
-  <h2>Pandora Beauty Salon</h2>
+  <h2>ABC Beauty Salon</h2>
   <p style="font-size: 18pt; margin-top: 30px;">${monthNames[summary.period.month - 1]} ${summary.period.year}</p>
   <p style="margin-top: 20px;">Generated: ${new Date().toLocaleDateString()}</p>
   <div style="margin-top: 50px;">

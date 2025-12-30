@@ -1,4 +1,4 @@
-# Pandora Booking - Test Coverage Analysis Report
+# ABC Booking - Test Coverage Analysis Report
 
 ## Executive Summary
 
@@ -671,7 +671,7 @@ test('complete booking flow', async ({ page }) => {
 
 ### 8.1 Directory Structure Changes
 ```
-pandora-booking/
+abc-booking/
 ├── __tests__/
 │   ├── lib/
 │   │   ├── auth-helpers.test.ts

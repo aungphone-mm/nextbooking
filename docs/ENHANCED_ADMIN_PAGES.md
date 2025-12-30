@@ -272,7 +272,7 @@ The enhanced admin pages now provide:
 ✅ **Accessibility**: Full keyboard navigation and screen reader support
 ✅ **Scalability**: Architecture supports business growth
 
-The admin management system now provides a comprehensive, professional experience that matches the high-quality services of Pandora Beauty Salon, making it easy for staff to efficiently manage all aspects of the business while maintaining excellent operational standards.
+The admin management system now provides a comprehensive, professional experience that matches the high-quality services of ABC Beauty Salon, making it easy for staff to efficiently manage all aspects of the business while maintaining excellent operational standards.
 
 ---
 

@@ -1,4 +1,4 @@
-# Pandora Beauty Salon Booking System
+# ABC Beauty Salon Booking System
 
 A modern web application for managing beauty salon appointments built with Next.js 14, TypeScript, Supabase, and Tailwind CSS.
 
@@ -31,7 +31,7 @@ A modern web application for managing beauty salon appointments built with Next.
 ## Project Structure
 
 ```
-pandora-booking/
+abc-booking/
 ├── app/                    # Next.js app directory
 │   ├── layout.tsx         # Root layout
 │   ├── page.tsx           # Home page
@@ -49,7 +49,7 @@ pandora-booking/
 
 1. **Clone the repository**
    ```bash
-   cd D:\dev\pandora-booking
+   cd D:\dev\abc-booking
    ```
 
 2. **Install dependencies**
@@ -150,4 +150,4 @@ Create these tables in your Supabase project:
 
 ## License
 
-This project is proprietary software for Pandora Beauty Salon.
+This project is proprietary software for ABC Beauty Salon.

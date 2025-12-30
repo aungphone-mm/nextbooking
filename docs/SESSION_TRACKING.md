@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Pandora Booking System now includes comprehensive session tracking to monitor user visits, device information, and usage patterns.
+The ABC Booking System now includes comprehensive session tracking to monitor user visits, device information, and usage patterns.
 
 ## Features
 

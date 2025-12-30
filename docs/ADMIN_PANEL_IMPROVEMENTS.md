@@ -2,7 +2,7 @@
 
 ## 🎨 Overview
 
-I've completely transformed your Pandora Beauty Salon admin panel into a modern, user-friendly interface with enhanced visual appeal and improved user experience. Here's a comprehensive breakdown of all the improvements made:
+I've completely transformed your ABC Beauty Salon admin panel into a modern, user-friendly interface with enhanced visual appeal and improved user experience. Here's a comprehensive breakdown of all the improvements made:
 
 ## 🚀 Key Improvements
 

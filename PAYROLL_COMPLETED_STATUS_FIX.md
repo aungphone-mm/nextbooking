@@ -24,7 +24,7 @@ Added **"Completed"** status option to the AppointmentManager component.
 
 ### Changes Made:
 
-**File**: [components/AppointmentManager.tsx](c:\node\pandora-booking\components\AppointmentManager.tsx)
+**File**: [components/AppointmentManager.tsx](c:\node\abc-booking\components\AppointmentManager.tsx)
 
 #### 1. Added to Status Filter Dropdown
 ```typescript

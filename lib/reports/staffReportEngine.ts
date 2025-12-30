@@ -345,7 +345,7 @@ export interface CompleteStaffReport {
 }
 
 export class StaffReportEngine {
-  private supabase = createClient()
+  
   private analyticsEngine = new AnalyticsEngine()
   private payrollEngine = new PayrollEngine()
 
@@ -374,7 +374,7 @@ export class StaffReportEngine {
    */
   private async generateExecutiveSummary(period: ReportPeriod): Promise<ExecutiveSummary> {
     // Get all active staff
-    const { data: staff } = await this.supabase
+    const { data: staff } = await (await createClient())
       .from('staff')
       .select('id, full_name, is_active')
       .eq('is_active', true)
@@ -382,7 +382,7 @@ export class StaffReportEngine {
     const totalStaff = staff?.length || 0
 
     // Get appointments in period
-    const { data: appointments } = await this.supabase
+    const { data: appointments } = await (await createClient())
       .from('appointments')
       .select(`
         id,
@@ -440,7 +440,7 @@ export class StaffReportEngine {
    * Generate individual staff profiles (Section 2)
    */
   private async generateStaffProfiles(period: ReportPeriod): Promise<StaffProfile[]> {
-    const { data: staff } = await this.supabase
+    const { data: staff } = await (await createClient())
       .from('staff')
       .select('*')
       .eq('is_active', true)
@@ -603,7 +603,7 @@ export class StaffReportEngine {
    */
   private async generateIndividualProfile(staff: any, period: ReportPeriod): Promise<StaffProfile> {
     // Get appointments for this staff in period
-    const { data: appointments } = await this.supabase
+    const { data: appointments } = await (await createClient())
       .from('appointments')
       .select(`
         *,
@@ -845,7 +845,7 @@ export class StaffReportEngine {
 
     // Get staff names
     const staffIds = Array.from(staffStats.keys())
-    const { data: staff } = await this.supabase
+    const { data: staff } = await (await createClient())
       .from('staff')
       .select('id, full_name')
       .in('id', staffIds)

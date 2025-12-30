@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Pandora Beauty Salon booking system now includes a comprehensive Business Intelligence (BI) dashboard that provides deep insights into salon operations, customer behavior, and financial performance.
+The ABC Beauty Salon booking system now includes a comprehensive Business Intelligence (BI) dashboard that provides deep insights into salon operations, customer behavior, and financial performance.
 
 ## 🚀 New Features Added
 

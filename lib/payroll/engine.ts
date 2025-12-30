@@ -47,7 +47,7 @@ export type StaffPayrollData = {
 }
 
 export class PayrollEngine {
-  private supabase = createClient()
+  
   private settingsCache: Map<string, number> = new Map()
 
   /**
@@ -60,7 +60,7 @@ export class PayrollEngine {
     }
 
     // Fetch from database
-    const { data } = await this.supabase
+    const { data } = await (await createClient())
       .from('payroll_settings')
       .select('setting_value')
       .eq('setting_key', key)
@@ -79,7 +79,7 @@ export class PayrollEngine {
     period: PayrollPeriod
   ): Promise<StaffPayrollData> {
     // 1. Get staff details
-    const { data: staff } = await this.supabase
+    const { data: staff } = await (await createClient())
       .from('staff')
       .select('*')
       .eq('id', staffId)
@@ -90,7 +90,7 @@ export class PayrollEngine {
     }
 
     // 2. Get completed appointments for the period
-    const { data: appointments } = await this.supabase
+    const { data: appointments } = await (await createClient())
       .from('appointments')
       .select(`
         *,
@@ -116,7 +116,7 @@ export class PayrollEngine {
     }
 
     // 4. Calculate product sales commission
-    const { data: productSales } = await this.supabase
+    const { data: productSales } = await (await createClient())
       .from('appointment_products')
       .select(`
         quantity,
@@ -145,7 +145,7 @@ export class PayrollEngine {
     const productCommission = (totalProductRevenue * productCommissionRate) / 100
 
     // 9. Get individual bonuses
-    const { data: individualBonuses } = await this.supabase
+    const { data: individualBonuses } = await (await createClient())
       .from('staff_bonuses')
       .select('amount')
       .eq('staff_id', staffId)
@@ -221,7 +221,7 @@ export class PayrollEngine {
    * Calculate and save payroll for all active staff for a period
    */
   async calculateAllStaffPayroll(period: PayrollPeriod): Promise<void> {
-    const { data: allStaff } = await this.supabase
+    const { data: allStaff } = await (await createClient())
       .from('staff')
       .select('id')
       .eq('is_active', true)
@@ -276,7 +276,7 @@ export class PayrollEngine {
       calculated_at: new Date().toISOString()
     }
 
-    await this.supabase
+    await (await createClient())
       .from('monthly_payroll')
       .upsert(payrollRecord, {
         onConflict: 'staff_id,period_month,period_year'
@@ -287,7 +287,7 @@ export class PayrollEngine {
    * Get performance tier based on completed appointments
    */
   private async getPerformanceTier(appointmentCount: number) {
-    const { data: tiers } = await this.supabase
+    const { data: tiers } = await (await createClient())
       .from('performance_tiers')
       .select('*')
       .eq('is_active', true)
@@ -320,7 +320,7 @@ export class PayrollEngine {
     period: PayrollPeriod
   ): Promise<number> {
     // Get all completed appointments for this staff in the period
-    const { data: appointments } = await this.supabase
+    const { data: appointments } = await (await createClient())
       .from('appointments')
       .select('customer_email, appointment_date')
       .eq('staff_id', staffId)
@@ -365,7 +365,7 @@ export class PayrollEngine {
     period: PayrollPeriod
   ): Promise<number> {
     // Get achieved team bonuses for the period
-    const { data: teamBonuses } = await this.supabase
+    const { data: teamBonuses } = await (await createClient())
       .from('team_bonuses')
       .select('*')
       .eq('is_achieved', true)
@@ -379,7 +379,7 @@ export class PayrollEngine {
     for (const bonus of teamBonuses) {
       if (bonus.distribution_method === 'equal') {
         // Equal split among all active staff
-        const { count } = await this.supabase
+        const { count } = await (await createClient())
           .from('staff')
           .select('*', { count: 'exact', head: true })
           .eq('is_active', true)
@@ -390,7 +390,7 @@ export class PayrollEngine {
       } else if (bonus.distribution_method === 'proportional') {
         // TODO: Implement proportional distribution based on hours/revenue
         // For now, use equal distribution
-        const { count } = await this.supabase
+        const { count } = await (await createClient())
           .from('staff')
           .select('*', { count: 'exact', head: true })
           .eq('is_active', true)
@@ -412,7 +412,7 @@ export class PayrollEngine {
     staffId: string,
     period: PayrollPeriod
   ): Promise<number> {
-    const { data: appointments } = await this.supabase
+    const { data: appointments } = await (await createClient())
       .from('appointments')
       .select(`
         *,
@@ -458,7 +458,7 @@ export class PayrollEngine {
    * Approve a payroll record
    */
   async approvePayroll(payrollId: string, approvedBy: string): Promise<void> {
-    await this.supabase
+    await (await createClient())
       .from('monthly_payroll')
       .update({
         status: 'approved',
@@ -472,7 +472,7 @@ export class PayrollEngine {
    * Mark payroll as paid
    */
   async markAsPaid(payrollId: string): Promise<void> {
-    await this.supabase
+    await (await createClient())
       .from('monthly_payroll')
       .update({
         status: 'paid',
@@ -485,7 +485,7 @@ export class PayrollEngine {
    * Get payroll summary for a period
    */
   async getPayrollSummary(period: PayrollPeriod) {
-    const { data: payrolls } = await this.supabase
+    const { data: payrolls } = await (await createClient())
       .from('monthly_payroll')
       .select(`
         *,

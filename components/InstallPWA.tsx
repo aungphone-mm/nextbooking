@@ -110,7 +110,7 @@ export default function InstallPWA() {
 
         <div className="flex-1">
           <h3 className="m-0 mb-1.5 text-base font-semibold text-gray-800">
-            Install Pandora Salon App
+            Install ABC Salon App
           </h3>
           <p className="m-0 mb-4 text-sm text-gray-500 leading-relaxed">
             Get quick access to book appointments and manage your bookings!

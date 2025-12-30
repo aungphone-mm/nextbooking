@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const analytics = new AnalyticsEngine()
     const exportData = await analytics.exportAnalyticsData({ startDate, endDate }, format)
 
-    const filename = `pandora-analytics-${startDate}-to-${endDate}.${format}`
+    const filename = `abc-analytics-${startDate}-to-${endDate}.${format}`
     const contentType = format === 'csv' ? 'text/csv' : 'application/json'
 
     return new NextResponse(exportData, {

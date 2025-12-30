@@ -9,13 +9,13 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Pandora Beauty Salon',
-  description: 'Book your beauty appointment at Pandora Salon',
+  title: 'ABC Beauty Salon',
+  description: 'Book your beauty appointment at ABC Salon',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Pandora Salon',
+    title: 'ABC Salon',
   },
   formatDetection: {
     telephone: false,
@@ -35,7 +35,7 @@ export const viewport = {
 
 async function getUser() {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
     const { data: { user }, error } = await supabase.auth.getUser()
 
     if (error) {
@@ -83,7 +83,7 @@ export default async function RootLayout({
                 href="/"
                 className="text-2xl font-bold text-white hover:text-pink-100 transition-colors"
               >
-                Pandora Beauty Salon
+                ABC Beauty Salon
               </Link>
               <nav className="flex gap-4 items-center flex-wrap">
                 <Link

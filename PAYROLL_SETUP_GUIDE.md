@@ -2,7 +2,7 @@
 
 ## 🚀 Getting Started
 
-Follow these steps to set up the Hybrid Payroll System for your Pandora Beauty Salon.
+Follow these steps to set up the Hybrid Payroll System for your ABC Beauty Salon.
 
 ## Step 1: Run Database Migration
 

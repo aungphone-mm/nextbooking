@@ -2,7 +2,7 @@
 
 ## ✅ What Was Implemented
 
-A complete **Hybrid Payroll, Bonus & Commission System** for Pandora Beauty Salon with:
+A complete **Hybrid Payroll, Bonus & Commission System** for ABC Beauty Salon with:
 - Flexible compensation profiles
 - Performance-based tier system
 - Multiple bonus types (custom, team, retention, skill)

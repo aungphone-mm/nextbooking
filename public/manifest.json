@@ -1,7 +1,7 @@
 {
-  "name": "Pandora Beauty Salon",
-  "short_name": "Pandora",
-  "description": "Book your beauty salon appointments with Pandora Beauty Salon",
+  "name": "ABC Beauty Salon",
+  "short_name": "ABC",
+  "description": "Book your beauty salon appointments with ABC Beauty Salon",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

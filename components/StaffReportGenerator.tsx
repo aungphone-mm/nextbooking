@@ -97,7 +97,7 @@ export default function StaffReportGenerator() {
 
       // Sheet 1: Executive Summary
       const summaryData = [
-        ['PANDORA BEAUTY SALON - STAFF PERFORMANCE & PAYROLL REPORT'],
+        ['ABC BEAUTY SALON - STAFF PERFORMANCE & PAYROLL REPORT'],
         [`Period: ${getMonthName(selectedMonth)} ${selectedYear}`],
         [''],
         ['TEAM OVERVIEW'],

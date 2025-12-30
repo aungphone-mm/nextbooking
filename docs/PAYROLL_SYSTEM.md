@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Hybrid Payroll System combines flexible compensation profiles, performance-based tiers, team bonuses, and custom bonuses to create a comprehensive staff compensation solution for Pandora Beauty Salon.
+The Hybrid Payroll System combines flexible compensation profiles, performance-based tiers, team bonuses, and custom bonuses to create a comprehensive staff compensation solution for ABC Beauty Salon.
 
 ## Features
 
@@ -289,7 +289,7 @@ Delete a bonus.
 
 ## Payroll Calculation Engine
 
-**Location**: [lib/payroll/engine.ts](c:\node\pandora-booking\lib\payroll\engine.ts)
+**Location**: [lib/payroll/engine.ts](c:\node\abc-booking\lib\payroll\engine.ts)
 
 ### `PayrollEngine` Class
 
@@ -341,7 +341,7 @@ Returns summary with totals for all staff.
 
 ## Admin Dashboard
 
-**Location**: [/admin/payroll](c:\node\pandora-booking\app\admin\payroll\page.tsx)
+**Location**: [/admin/payroll](c:\node\abc-booking\app\admin\payroll\page.tsx)
 
 ### Features
 
@@ -369,7 +369,7 @@ Returns summary with totals for all staff.
 
 ## Staff Earnings Tracker
 
-**Location**: [/admin/staff-earnings](c:\node\pandora-booking\app\admin\staff-earnings\page.tsx)
+**Location**: [/admin/staff-earnings](c:\node\abc-booking\app\admin\staff-earnings\page.tsx)
 
 ### Features
 
@@ -580,9 +580,9 @@ Potential additions:
 ## Support
 
 For issues or questions:
-- Check [CLAUDE.md](c:\node\pandora-booking\CLAUDE.md) for project context
-- Review migration file: [create_payroll_system.sql](c:\node\pandora-booking\database\migrations\create_payroll_system.sql)
-- Examine calculation engine: [lib/payroll/engine.ts](c:\node\pandora-booking\lib\payroll\engine.ts)
+- Check [CLAUDE.md](c:\node\abc-booking\CLAUDE.md) for project context
+- Review migration file: [create_payroll_system.sql](c:\node\abc-booking\database\migrations\create_payroll_system.sql)
+- Examine calculation engine: [lib/payroll/engine.ts](c:\node\abc-booking\lib\payroll\engine.ts)
 
 ---
 

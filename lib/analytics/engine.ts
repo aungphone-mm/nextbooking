@@ -47,10 +47,11 @@ export interface StaffPerformance {
 }
 
 export class AnalyticsEngine {
-  private supabase = createClient()
+  
 
   async getRevenueMetrics(timeframe: AnalyticsTimeframe): Promise<RevenueMetrics> {
-    const { data: appointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: appointments, error } = await supabase
       .from('appointments')
       .select(`
         appointment_date,
@@ -94,7 +95,8 @@ export class AnalyticsEngine {
   }
 
   async getCustomerMetrics(timeframe: AnalyticsTimeframe): Promise<CustomerMetrics> {
-    const { data: appointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: appointments, error } = await supabase
       .from('appointments')
       .select(`
         customer_email,
@@ -159,7 +161,8 @@ export class AnalyticsEngine {
   }
 
   async getOperationalMetrics(timeframe: AnalyticsTimeframe): Promise<OperationalMetrics> {
-    const { data: appointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: appointments, error } = await supabase
       .from('appointments')
       .select(`
         appointment_date,
@@ -202,7 +205,8 @@ export class AnalyticsEngine {
   }
 
   async getServicePerformance(timeframe: AnalyticsTimeframe): Promise<ServicePerformance[]> {
-    const { data: appointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: appointments, error } = await supabase
       .from('appointments')
       .select(`
         services(id, name, price, duration),
@@ -253,7 +257,8 @@ export class AnalyticsEngine {
   }
 
   async getStaffPerformance(timeframe: AnalyticsTimeframe): Promise<StaffPerformance[]> {
-    const { data: appointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: appointments, error } = await supabase
       .from('appointments')
       .select(`
         staff_id,
@@ -332,7 +337,7 @@ export class AnalyticsEngine {
     }
 
     // Convert to CSV format
-    let csv = 'Pandora Beauty Salon - Analytics Report\n'
+    let csv = 'ABC Beauty Salon - Analytics Report\n'
     csv += `Generated: ${new Date().toLocaleString()}\n`
     csv += `Period: ${timeframe.startDate} to ${timeframe.endDate}\n\n`
     
@@ -367,7 +372,8 @@ export class AnalyticsEngine {
   }> {
     const today = new Date().toISOString().split('T')[0]
     
-    const { data: todaysAppointments, error } = await this.supabase
+    const supabase = await createClient()
+    const { data: todaysAppointments, error } = await supabase
       .from('appointments')
       .select(`
         services(price),

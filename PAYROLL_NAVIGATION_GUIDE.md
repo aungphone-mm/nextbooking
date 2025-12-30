@@ -327,7 +327,7 @@ To make a user an admin:
 -- In Supabase SQL Editor
 UPDATE profiles
 SET is_admin = true
-WHERE email = 'admin@pandorabeauty.com';
+WHERE email = 'admin@abcbeauty.com';
 ```
 
 ---

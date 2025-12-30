@@ -1,4 +1,4 @@
-# 💰 Pandora Beauty Salon - Payroll System User Manual
+# 💰 ABC Beauty Salon - Payroll System User Manual
 
 **Version 1.0** | **December 2025** | **For Salon Managers & Administrators**
 
@@ -23,7 +23,7 @@
 
 ## Welcome
 
-Welcome to the Pandora Beauty Salon Payroll System! This manual will guide you through everything you need to know to manage your staff's pay, commissions, and bonuses.
+Welcome to the ABC Beauty Salon Payroll System! This manual will guide you through everything you need to know to manage your staff's pay, commissions, and bonuses.
 
 ### Who is this manual for?
 
@@ -775,12 +775,12 @@ A: The web interface is mobile-responsive, but no native app yet.
 - [Technical Documentation](docs/PAYROLL_SYSTEM.md)
 
 **Technical Support**:
-- Email: support@pandorabeauty.com (update with your actual support email)
+- Email: support@abcbeauty.com (update with your actual support email)
 - Phone: XXX-XXX-XXXX (update with your actual support phone)
 
 **Feature Requests**:
 - Submit via GitHub Issues (if applicable)
-- Email: feedback@pandorabeauty.com
+- Email: feedback@abcbeauty.com
 
 ### Reporting Bugs
 

@@ -410,7 +410,7 @@ export default function ConfirmationPage() {
           // Registered user message
           <>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Thank you for booking with Pandora Beauty Salon!
+              Thank you for booking with ABC Beauty Salon!
               We've sent a confirmation email with your appointment details to <strong>{user.email}</strong>.
             </p>
 
@@ -504,10 +504,10 @@ export default function ConfirmationPage() {
               📞 (123) 456-7890
             </a>
             <a
-              href="mailto:info@pandorabeauty.com"
+              href="mailto:info@abcbeauty.com"
               className="inline-flex items-center text-pink-600 hover:text-pink-700 text-sm font-medium"
             >
-              ✉️ info@pandorabeauty.com
+              ✉️ info@abcbeauty.com
             </a>
           </div>
         </div>

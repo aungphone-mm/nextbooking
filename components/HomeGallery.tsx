@@ -82,7 +82,7 @@ export default function HomeGallery() {
               >
                 <img
                   src={photo.image_url}
-                  alt={photo.alt_text || 'Pandora Beauty Salon'}
+                  alt={photo.alt_text || 'ABC Beauty Salon'}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
@@ -122,7 +122,7 @@ export default function HomeGallery() {
           >
             <img
               src={selectedPhoto.image_url}
-              alt={selectedPhoto.alt_text || 'Pandora Beauty Salon'}
+              alt={selectedPhoto.alt_text || 'ABC Beauty Salon'}
               className="max-w-full max-h-[85vh] rounded-2xl shadow-2xl"
             />
             {selectedPhoto.caption && (

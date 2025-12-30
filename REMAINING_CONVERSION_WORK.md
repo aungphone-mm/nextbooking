@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the remaining work needed to complete the Tailwind CSS conversion for the Pandora Beauty Salon Booking System.
+This document outlines the remaining work needed to complete the Tailwind CSS conversion for the ABC Beauty Salon Booking System.
 
 ## Current Status (as of December 16, 2025)
 

@@ -1,6 +1,6 @@
 # Password Reset Setup Guide
 
-This guide explains how to configure the forgot password / password reset feature in the Pandora Booking System.
+This guide explains how to configure the forgot password / password reset feature in the ABC Booking System.
 
 ## Overview
 
@@ -19,8 +19,8 @@ The password reset flow consists of:
 1. Go to **Supabase Dashboard** → Your Project
 2. Navigate to **Authentication** → **URL Configuration**
 3. Find **Site URL** (at the top)
-4. **Change from:** `https://pandora-booking.vercel.app/booking`
-5. **Change to:** `https://pandora-booking.vercel.app`
+4. **Change from:** `https://abc-booking.vercel.app/booking`
+5. **Change to:** `https://abc-booking.vercel.app`
    - **Remove the `/booking` suffix!**
 6. Click **Save**
 
@@ -30,8 +30,8 @@ Add your reset password URL to **Redirect URLs** (same page, below Site URL):
 
 1. Under **Redirect URLs**, click **Add URL**
 2. Add these URLs:
-   - `https://pandora-booking.vercel.app/auth/reset-password`
-   - `https://pandora-booking.vercel.app/**` (wildcard for all routes)
+   - `https://abc-booking.vercel.app/auth/reset-password`
+   - `https://abc-booking.vercel.app/**` (wildcard for all routes)
    - `http://localhost:3000/auth/reset-password` (for development)
 3. Click **Save**
 
@@ -47,7 +47,7 @@ To customize the password reset email appearance:
 ```html
 <h2>Reset Your Password</h2>
 <p>Hi there,</p>
-<p>We received a request to reset your password for Pandora Beauty Salon.</p>
+<p>We received a request to reset your password for ABC Beauty Salon.</p>
 <p>Click the button below to reset your password:</p>
 <p><a href="{{ .ConfirmationURL }}">Reset Password</a></p>
 <p>This link will expire in 60 minutes.</p>
@@ -110,11 +110,11 @@ The reset password page handles these error scenarios:
 **Solution:** Add the URL to Supabase Dashboard → Authentication → URL Configuration → Redirect URLs
 
 ### Error redirects to wrong page (e.g., `/booking`)
-**Cause:** Your Supabase **Site URL** is set to `https://pandora-booking.vercel.app/booking` instead of `https://pandora-booking.vercel.app`
+**Cause:** Your Supabase **Site URL** is set to `https://abc-booking.vercel.app/booking` instead of `https://abc-booking.vercel.app`
 
 **Solution:**
 1. Go to **Supabase Dashboard → Authentication → URL Configuration**
-2. Change **Site URL** from `https://pandora-booking.vercel.app/booking` to `https://pandora-booking.vercel.app`
+2. Change **Site URL** from `https://abc-booking.vercel.app/booking` to `https://abc-booking.vercel.app`
 3. **Remove the `/booking` suffix completely**
 4. Click **Save**
 5. Test again by requesting a new password reset
@@ -126,7 +126,7 @@ The reset password page handles these error scenarios:
 - Fix: Site URL should be your domain root without any path
 
 **Additional checks:**
-1. Verify **Redirect URLs** includes `https://pandora-booking.vercel.app/auth/reset-password`
+1. Verify **Redirect URLs** includes `https://abc-booking.vercel.app/auth/reset-password`
 2. Check Supabase Dashboard → Authentication → Email Templates → Reset Password
 3. Ensure the template uses `{{ .ConfirmationURL }}` (not a hardcoded URL)
 

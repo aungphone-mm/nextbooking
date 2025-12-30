@@ -239,7 +239,7 @@ export default function AdminDashboard() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-center mb-4 gap-4 md:gap-0 relative z-10 text-center md:text-left">
           <div>
             <h2 className="text-4xl sm:text-[1.75rem] font-bold m-0 drop-shadow-sm">Welcome Back! 👋</h2>
-            <p className="text-lg sm:text-[0.9rem] mt-2 opacity-90">Here's what's happening at Pandora Beauty Salon today</p>
+            <p className="text-lg sm:text-[0.9rem] mt-2 opacity-90">Here's what's happening at ABC Beauty Salon today</p>
           </div>
           <button
             onClick={loadDashboardData}

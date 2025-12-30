@@ -8,7 +8,7 @@ import ProfileEditForm from '@/components/ProfileEditForm'
 export const dynamic = 'force-dynamic'
 
 export default async function AccountPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) {

@@ -209,7 +209,7 @@ export function ExportButton({
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `pandora-analytics-${startDate}-to-${endDate}.${format}`
+      a.download = `abc-analytics-${startDate}-to-${endDate}.${format}`
       document.body.appendChild(a)
       a.click()
       window.URL.revokeObjectURL(url)

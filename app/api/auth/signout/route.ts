@@ -4,7 +4,7 @@ import { cookies } from 'next/headers'
 
 export async function POST(request: Request) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
     const cookieStore = cookies()
 
     // 1. Try to sign out with Supabase (don't fail if this errors)

@@ -40,7 +40,7 @@ async function validateImageFile(file: File): Promise<{ valid: boolean; error?: 
 // GET - Fetch gallery photos
 export async function GET(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
     const { searchParams } = new URL(request.url)
     const includeInactive = searchParams.get('includeInactive') === 'true'
 
@@ -84,7 +84,7 @@ export async function GET(request: NextRequest) {
 // POST - Upload new photo
 export async function POST(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Check authentication
     const { data: { user } } = await supabase.auth.getUser()
@@ -206,7 +206,7 @@ export async function POST(request: NextRequest) {
 // DELETE - Remove photo
 export async function DELETE(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Check authentication
     const { data: { user } } = await supabase.auth.getUser()
@@ -276,7 +276,7 @@ export async function DELETE(request: NextRequest) {
 // PATCH - Update photo details (alt_text, caption, is_active)
 export async function PATCH(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Check authentication
     const { data: { user } } = await supabase.auth.getUser()

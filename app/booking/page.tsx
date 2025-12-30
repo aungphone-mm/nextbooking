@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export default async function BookingPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
   return (
@@ -44,7 +44,7 @@ export default async function BookingPage() {
                 Call (123) 456-7890
               </a>
               <a
-                href="mailto:info@pandorabeauty.com"
+                href="mailto:info@abcbeauty.com"
                 className="inline-flex items-center justify-center bg-purple-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
               >
                 Email Us

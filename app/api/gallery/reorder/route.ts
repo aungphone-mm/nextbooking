@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic'
 // PUT - Reorder photos
 export async function PUT(request: NextRequest) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Check authentication
     const { data: { user } } = await supabase.auth.getUser()

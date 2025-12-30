@@ -1,8 +1,8 @@
-# 📱 Pandora Beauty Salon - PWA (Progressive Web App) Setup
+# 📱 ABC Beauty Salon - PWA (Progressive Web App) Setup
 
 ## ✅ What Has Been Implemented
 
-Your Pandora Beauty Salon booking system is now a **fully installable Progressive Web App (PWA)**! This means customers can install it on their Android (and iOS) devices like a native app.
+Your ABC Beauty Salon booking system is now a **fully installable Progressive Web App (PWA)**! This means customers can install it on their Android (and iOS) devices like a native app.
 
 ## 🎯 Features Added
 
@@ -91,7 +91,7 @@ package.json                  # Added next-pwa and sharp dependencies
 3. **Test Installation (Desktop Chrome):**
    - Look for install icon (⊕) in the address bar
    - Click to install
-   - Or go to Chrome menu → "Install Pandora Beauty Salon"
+   - Or go to Chrome menu → "Install ABC Beauty Salon"
 
 ### **Method 2: Android Device Testing**
 
@@ -375,6 +375,6 @@ vercel --prod
 
 ---
 
-**🎊 Congratulations!** Your Pandora Beauty Salon is now a Progressive Web App!
+**🎊 Congratulations!** Your ABC Beauty Salon is now a Progressive Web App!
 
 Your customers can install it on their phones and enjoy a native app-like experience. 📱✨

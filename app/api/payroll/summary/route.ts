@@ -8,7 +8,7 @@ import { PayrollEngine } from '@/lib/payroll/engine'
  */
 export async function GET(request: Request) {
   try {
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Check admin authentication
     const { data: { user } } = await supabase.auth.getUser()
