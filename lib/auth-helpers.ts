@@ -18,6 +18,11 @@ export async function requireAuth() {
 }
 
 export async function requireAdmin() {
+  // DEMO MODE: Allow all users to access admin routes
+  // Comment out this return to re-enable admin authentication
+  return null
+
+  /* PRODUCTION CODE (commented out for demo):
   try {
     const supabase = await createClient()
     const { data: { user }, error } = await supabase.auth.getUser()
@@ -41,6 +46,7 @@ export async function requireAdmin() {
     console.error('Admin check failed:', error)
     redirect('/')
   }
+  */
 }
 
 // Helper to safely get user without redirecting

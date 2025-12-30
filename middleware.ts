@@ -54,11 +54,13 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // Protect admin routes
+  // DEMO MODE: Admin routes are open to everyone for demonstration
+  // Protect admin routes (DISABLED FOR DEMO)
+  /*
   if (request.nextUrl.pathname.startsWith('/admin')) {
     try {
       const { data: { user } } = await supabase.auth.getUser()
-      
+
       if (!user) {
         return NextResponse.redirect(new URL('/auth/login', request.url))
       }
@@ -77,6 +79,7 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(new URL('/auth/login', request.url))
     }
   }
+  */
 
   return response
 }
