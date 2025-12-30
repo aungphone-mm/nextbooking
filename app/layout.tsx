@@ -5,8 +5,8 @@ import InstallPWA from '@/components/InstallPWA'
 import SessionTrackingProvider from '@/components/SessionTrackingProvider'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-// Layout is automatically dynamic due to cookie usage in createClient()
-// Individual pages can opt into static generation if they don't need auth
+// Force dynamic rendering because this layout uses cookies for authentication
+export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: 'Pandora Beauty Salon',
